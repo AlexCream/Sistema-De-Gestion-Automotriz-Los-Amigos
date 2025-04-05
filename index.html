@@ -8,18 +8,18 @@
 
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="dex.js"></script>
     
 </head>
-<body class="d-flex flex-column min-vh-1000 bg-secondary">
-    <div class="container-fluid h-100 d-flex flex-column">
-        <div class="row" id="header"></div>
+<body class="d-flex flex-column min-vh-100 bg-secondary">
+    <div class="container-fluid flex-grow-1 d-flex flex-column px-0">
+        <header class="row" id="header"></header>
 
-        <div class="row" id="main"></div>
+        <main class="row flex-grow-1 overflow-auto" id="main"></main>
 
-        <div class="row mb-0 fixed-bottom" id="footer"></div>
+        <footer class="row mt-auto" id="footer"></footer>
     
     </div>
 </body>
