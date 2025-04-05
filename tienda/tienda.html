@@ -1,15 +1,17 @@
 <div class="container py-4">
-
+    <!-- Sección de búsqueda mejorada -->
     <div class="row pb-3" id="seccionBusqueda">
-        <form action="#" method="get" class="form"></form>
-            <div class="col-2 col-auto">
+        <form action="#" method="get" class="d-flex flex-wrap align-items-center justify-content-around">
+            <!-- Botón Filtros - ahora con tamaño responsive -->
+            <div class="col-12 col-sm-auto mb-2 mb-sm-0">
                 <div class="dropdown">
                     <button class="btn btn-danger dropdown-toggle w-100" type="button" 
                             id="dropdownFiltros" data-bs-toggle="dropdown" 
                             aria-expanded="false">
                         Filtros
                     </button>
-                    <div class="dropdown-menu p-3" aria-labelledby="dropdownFiltros" style="width: 300px;">
+                    <div class="dropdown-menu p-3" aria-labelledby="dropdownFiltros" style="min-width: 300px;">
+                        <!-- Contenido del dropdown igual que antes -->
                         <div class="mb-3">
                             <label for="filtroMarca" class="form-label">Marca</label>
                             <select class="form-select" id="filtroMarca">
@@ -47,19 +49,21 @@
                     </div>
                 </div>
             </div>
-            <div class="col-8 col-auto">
-                <input class="form-control" type="text" name="buscador" placeholder="Buscar automotvil" id="buscador">
+            
+            <!-- Campo de búsqueda - ahora ocupa más espacio en móviles -->
+            <div class="col-12 col-sm-8 col-md-9 mb-2 mb-sm-0">
+                <input class="form-control" type="text" name="buscador" placeholder="Buscar automóvil" id="buscador">
             </div>
-            <div class="col-2 col-auto">
-                <button class="form-control btn btn-danger" type="submit">Buscar</button>
+            
+            <!-- Botón Buscar - con tamaño fijo pero responsive -->
+            <div class="col-12 col-sm-auto">
+                <button class="btn btn-danger w-100" type="submit">Buscar</button>
             </div>
         </form>
     </div>
 
-    <div class="row g-3"> <!--g-3 ME AÑADE EL ESPACIO ENTRE LAS FILAS Y LAS COLUMNAS-->
-        <!-- Producto -->
-
-        <!--ESTA ES LA PLANTILLA PARA UNPRODUCTO -->
+    <!-- Sección de productos (igual que antes) -->
+    <div class="row g-3">
         <div class="col-12 col-sm-6 col-md-3">
             <div class="card h-100 text-center">
                 <img src="img/producto1.jpg" class="card-img-top" alt="Producto">
@@ -69,36 +73,42 @@
                 </div>
             </div>
         </div>
-        
         <div class="col-12 col-sm-6 col-md-3">
             <div class="card h-100 text-center">
-                <img src="img/producto2.jpg" class="card-img-top" alt="Producto">
+                <img src="img/producto1.jpg" class="card-img-top" alt="Producto">
                 <div class="card-body">
                     <h5 class="card-title">PRODUCTO</h5>
                     <p class="card-text">#####</p>
                 </div>
             </div>
         </div>
-
         <div class="col-12 col-sm-6 col-md-3">
             <div class="card h-100 text-center">
-                <img src="img/producto2.jpg" class="card-img-top" alt="Producto">
+                <img src="img/producto1.jpg" class="card-img-top" alt="Producto">
                 <div class="card-body">
                     <h5 class="card-title">PRODUCTO</h5>
                     <p class="card-text">#####</p>
                 </div>
             </div>
         </div>
-
         <div class="col-12 col-sm-6 col-md-3">
             <div class="card h-100 text-center">
-                <img src="img/producto2.jpg" class="card-img-top" alt="Producto">
+                <img src="img/producto1.jpg" class="card-img-top" alt="Producto">
                 <div class="card-body">
                     <h5 class="card-title">PRODUCTO</h5>
                     <p class="card-text">#####</p>
                 </div>
             </div>
         </div>
-        <!--AQUI AÑADIRE MAS PRODUCTOS-->
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 text-center">
+                <img src="img/producto1.jpg" class="card-img-top" alt="Producto">
+                <div class="card-body">
+                    <h5 class="card-title">PRODUCTO</h5>
+                    <p class="card-text">#####</p>
+                </div>
+            </div>
+        </div>
+        <!-- Más productos... -->
     </div>
 </div>
