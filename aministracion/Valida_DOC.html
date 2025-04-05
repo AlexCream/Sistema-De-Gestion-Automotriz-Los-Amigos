@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotriz Los Amigos - Validar Documentos</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #6c757d; 
+        }
+        .header {
+            background-color: #343a40; 
+            color: white;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .table-responsive {
+            margin: 20px auto;
+            max-width: 1000px;
+            background-color: white; 
+            border-radius: 8px; 
+            padding: 20px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        .btn-custom {
+            background-color: #343a40; 
+            color: white;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #0d6efd; 
+        }
+        .home-btn {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header text-center">
+        <!-- Botón Home en esquina superior izquierda -->
+        <a href="index.html" class="btn btn-custom home-btn">Home</a>
+        
+        <h1>Automotriz Los Amigos</h1>
+        
+        <!-- Botón de Cerrar Sesión -->
+        <a href="logout.html" class="btn btn-custom position-absolute top-0 end-0 m-2">Cerrar Sesión</a>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Validar Documentos Requeridos para la Venta</h2>
+        
+        <!-- Botones de acción -->
+        <div class="action-buttons">
+            <a href="dashboard.html" class="btn btn-custom">Volver Atrás</a>
+            <a href="catalogo.html" class="btn btn-custom">Catálogo</a>
+        </div>
+        
+        <!-- Tabla de documentos -->
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                        <th>Documentación</th>
+                        <th>Validar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Juan Barrera</td>
+                        <td>6234234</td>
+                        <td>Barrera@example.com</td>
+                        <td><a href="#" class="text-danger">Papeles.pdf</a></td>
+                        <td><input type="checkbox" class="form-check-input"></td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Gustavo Fring</td>
+                        <td>9856034</td>
+                        <td>Fring@example.com</td>
+                        <td><a href="#" class="text-danger">documents.pdf</a></td>
+                        <td><input type="checkbox" class="form-check-input" checked></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

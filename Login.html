@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotriz Los Amigos - Login</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #6c757d;
+        }
+        .custom-top-bar {
+            background-color: #343a40;
+            height: 80px;
+        }
+        .custom-bottom-bar {
+            background-color: #343a40;
+            height: 60px;
+        }
+        .login-container {
+            max-width: 400px;
+        }
+        .btn-custom {
+            background-color: #343a40;
+        }
+        .btn-custom:hover {
+            background-color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra superior -->
+<div class="custom-top-bar d-flex align-items-center justify-content-center text-white fw-bold" style="font-size: 3rem;">
+    Automotriz Los Amigos
+</div>
+
+    <!-- Contenido del login -->
+    <div class="container login-container my-5 p-4 bg-white rounded">
+        <h2 class="text-center mb-4">Iniciar Sesión</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label fw-bold">Correo</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">Contraseña</label>
+                <input type="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-custom text-white w-100">Iniciar Sesión</button>
+            <a href="#" class="d-block text-center mt-3 text-danger text-decoration-none">¿No tienes una cuenta? Regístrate aquí</a>
+        </form>
+    </div>
+
+    <!-- Barra inferior -->
+    <div class="custom-bottom-bar fixed-bottom"></div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
